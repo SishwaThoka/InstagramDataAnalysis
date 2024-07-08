@@ -1,5 +1,4 @@
 # InstagramDataAnalysis
-DBMS Final Project
 
 Instagram has shown exponential growth as an innovative social media platform, attracting a large number of followers.
 

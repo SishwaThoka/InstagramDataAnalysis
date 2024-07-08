@@ -1,0 +1,50 @@
+                                      Database Design Documentation
+
+Introduction 
+Instagram has experienced exponential growth in followers as an innovative social media platform. This has also contributed to new avenues of growth for influencers as they can extensively increase their followers via various Instagram features and products. The purpose of this database is to maintain data on the influencers, comments, posts, reels, users, followers, and likes to draw inferences on effective ways of connecting with audiences.
+Mission Objectives:
+	•	To maintain (enter, update, and delete) data on Instagram Influencers.
+	•	To maintain (enter, update, and delete) data on Instagram Posts.
+	•	To maintain (enter, update, and delete) data on Instagram Users.
+	•	To maintain (enter, update, and delete) data on Instagram Reels.
+	•	To maintain (enter, update, and delete) data on Instagram Stories.
+	•	To track the comments on new posts.
+	•	To track the number of likes on posts, stories, and reels.
+	•	To determine the number of followers of an influencer page.
+	•	To determine the popular Instagram influencers.
+	•	To track the Follower growth rate
+	•	To track the Engagement Rate
+	•	To measure the sentiment (positive or negative) of comments 
+	•	To determine Trending Hashtags 
+Business Problems
+Instagram's database is designed to address the following business problems:
+	•	Understanding audience engagement: Influencers may learn more about how their audience is interacting with their content by studying post data. Metrics like likes, comments, and shares fall under this category. Influencers may use this information to better target their content to audience preferences and increase engagement rates.
+	•	Evaluating content performance: Businesses may assess the effectiveness of their content over time by using post metrics. Businesses may determine which types of content are engaging with their audience and modify their content strategy by monitoring data like reach, impressions, and engagement rates.
+	•	Identifying top-performing content: Influencers may determine which posts are doing the best by looking at post analytics, and they can use this knowledge to drive their content strategy. This can contain stats like the most popular content.
+	•	Benchmarking against competitors: Influencers may learn about market trends and pinpoint areas for development by tracking post data for both their own material and that of their rivals. Metrics like average engagement rates and follower growth rates might be a part of this.
+ 
+Design Requirements (Credit to Professor Simon Wang):
+• Use Crow's Foot Notation.
+• Specify the primary key fields in each table by specifying PK beside the fields.
+Draw a line between the fields of each table to show the relationships between each table. This line should be pointed directly to the fields in each table that are used to form the relationship.
+• Specify which table is on the one side of the relationship by placing a one next to the field where the line starts.
+• Specify which table is on the many sides of the relationship by placing a crow's feet symbol next to the field where the line ends.
+ 
+Entities and Relationships
+The following are the entities in Instagram's database and how they are related:
+	•	Users: An Instagram user is represented by the user entity. User information such the user's name, email address, profile picture, and bio are included. User IDs are different for every user. 
+	•	Posts: An Instagram user's uploaded image or video is represented as a post. It includes information like the picture or video file, the caption, the place, and the timestamp. Every post has a special post ID. 
+	•	Comments: A user's remark on a post is represented by the comment entity. It includes information like the remark content, the commenter's username, and the timestamp. An individual comment ID is assigned to each one.
+	•	Hashtags: These are the terms or phrases used to classify postings and make them visible to visitors who are looking for types of material.
+	•	Followers: There are different users who decide to subscribe to a person's profile so they may view postings from that user in their news feed.
+	•	Story: These are transient postings that vanish after a day. In their stories, users may add filters, text, and stickers to photographs and videos that they post.
+	•	Reels: This is an Instagram tool that enables users to make and share short movies up to 60 seconds long with a variety of artistic options including music, filters, and effects.
+	•	Location: Users can specify a specific location or a broad area as the location of their postings using tags. This enables other users to explore locations they might be interested in visiting or find material from a certain
+	•	Filters: Instagram users have access to a wide range of filters that they may use to enhance or otherwise change the look of their images and videos. 
+	•	Media: Photo, video, and story posts made by users on Instagram
+	•	Interactions: Users may respond to postings with a variety of emojis, such as a heart, fire, or thumbs up, in addition to like and commenting on them.
+	•	Tags: Users may mention and give credit to other users or work with them on material by tagging them in their posts or stories in addition to using hashtags.
+	•	Likes – The likes obtained on posts, stories, and reels are added in this table. 
+	•	UserLogin – The user login table contains the login and logout times of the user and the duration of the session.  
+	•	MediaFilter – The media filter table is an associative entity which combines the media and the filter tables.
+	•	MediaHashtags – The media hashtags table is an associative entity which combines the media with the hashtags table.
